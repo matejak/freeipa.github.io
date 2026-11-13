@@ -305,34 +305,8 @@
 
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Downloads.html">Downloads</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Contribute.html">Contribute</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../release-notes/index.html">Release notes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-5.html">FreeIPA 4.13.5</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-4.html">FreeIPA 4.13.4</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-3.html">FreeIPA 4.13.3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-2.html">FreeIPA 4.13.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-1.html">FreeIPA 4.13.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-0.html">FreeIPA 4.13.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-5.html">FreeIPA 4.12.5</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-4.html">FreeIPA 4.12.4</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-3.html">FreeIPA 4.12.3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-2.html">FreeIPA 4.12.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-1.html">FreeIPA 4.12.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-0.html">FreeIPA 4.12.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-11-2.html">FreeIPA 4.11.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-11-1.html">FreeIPA 4.11.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-11-0.html">FreeIPA 4.11.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-11-0-beta.html">FreeIPA 4.11.0-beta</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-10-3.html">FreeIPA 4.10.3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-10-2.html">FreeIPA 4.10.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-9-14.html">FreeIPA 4.9.14</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-9-13.html">FreeIPA 4.9.13</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-9-12.html">FreeIPA 4.9.12</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-6-10.html">FreeIPA 4.6.10</a></li>
-</ul>
-</details></li>
 </ul>
 
     </div>
@@ -676,10 +650,7 @@ freeipa-server-dns package.</p>
 <div><p>The command can take command arguments or can be run in the
 interactive mode. You can get more details with
 <strong class="command">man ipa-server-install</strong>. To start the interactive installation,
-run:</p>
-<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp"># </span>ipa-server-install
-</pre></div>
-</div>
+run <strong class="command">ipa-server-install</strong> as a superuser.</p>
 <p>The command will at first gather all required information and then
 configure all required services.</p>
 </div></blockquote>
@@ -701,7 +672,7 @@ created.</p>
 </div>
 <p>You will be prompted for the password. Use the password that you
 specified during the configuration step for the admin user. As a result
-of this operation you acquire a Kerberos ticket for your <a class="reference internal" href="../glossary.html#term-principal"><span class="xref std std-term">principal</span></a>
+of this operation you acquire a Kerberos ticket for your <span class="xref std std-term">principal</span>
 (see <a class="reference internal" href="Kerberos.html"><span class="doc">Kerberos</span></a>).</p>
 </section>
 <section id="help-system-in-freeipa">

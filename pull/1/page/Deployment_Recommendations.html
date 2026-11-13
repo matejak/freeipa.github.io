@@ -305,34 +305,8 @@
 
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Downloads.html">Downloads</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Contribute.html">Contribute</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../release-notes/index.html">Release notes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-5.html">FreeIPA 4.13.5</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-4.html">FreeIPA 4.13.4</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-3.html">FreeIPA 4.13.3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-2.html">FreeIPA 4.13.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-1.html">FreeIPA 4.13.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-0.html">FreeIPA 4.13.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-5.html">FreeIPA 4.12.5</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-4.html">FreeIPA 4.12.4</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-3.html">FreeIPA 4.12.3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-2.html">FreeIPA 4.12.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-1.html">FreeIPA 4.12.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-0.html">FreeIPA 4.12.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-11-2.html">FreeIPA 4.11.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-11-1.html">FreeIPA 4.11.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-11-0.html">FreeIPA 4.11.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-11-0-beta.html">FreeIPA 4.11.0-beta</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-10-3.html">FreeIPA 4.10.3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-10-2.html">FreeIPA 4.10.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-9-14.html">FreeIPA 4.9.14</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-9-13.html">FreeIPA 4.9.13</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-9-12.html">FreeIPA 4.9.12</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-6-10.html">FreeIPA 4.6.10</a></li>
-</ul>
-</details></li>
 </ul>
 
     </div>
@@ -582,7 +556,7 @@ role in identity management functionality, especially
 <code class="docutils literal notranslate"><span class="pre">ipa.example.com</span></code> which should not be shared with other
 <a class="reference internal" href="Kerberos.html"><span class="doc">Kerberos</span></a> based identity management system as otherwise
 there will be collisions on Kerberos system level. For example, if both
-FreeIPA and Active Directory use the same domain, <a class="reference internal" href="../glossary.html#term-trust"><span class="xref std std-term">trusts</span></a>
+FreeIPA and Active Directory use the same domain, <span class="xref std std-term">trusts</span>
 will be never possible, as well as automatic client server discovery via
 <a class="reference internal" href="DNS.html"><span class="doc">DNS</span></a> SRV records.</p>
 <p>Client machines do not need to be in the same domain as FreeIPA servers.
@@ -634,7 +608,7 @@ of network resources by FreeIPA clients.</p>
 service or an external name service. A FreeIPA domain delegated to the
 integrated <a class="reference internal" href="DNS.html"><span class="doc">DNS</span></a> service is a recommended approach.</p>
 <p>When using external name server, identity management functionality or
-<a class="reference internal" href="../glossary.html#term-trust"><span class="xref std std-term">trusts</span></a> will be possible, however the configuration will be
+<span class="xref std std-term">trusts</span> will be possible, however the configuration will be
 much more difficult and error prone. Full list of benefits of using the
 integrated DNS service can be found in <a class="reference internal" href="DNS.html#dns-integration-benefits"><span class="std std-ref">Benefits of integrated DNS</span></a>.</p>
 </section>
@@ -752,9 +726,9 @@ access to HTTPS (443) from a client side.</p>
 </section>
 <section id="active-directory-integration">
 <h2>Active Directory Integration<a class="headerlink" href="#active-directory-integration" title="Link to this heading">#</a></h2>
-<p>In order to be able to configure <a class="reference internal" href="../glossary.html#term-trust"><span class="xref std std-term">trusts</span></a>, <a class="reference internal" href="DNS.html"><span class="doc">DNS</span></a>
+<p>In order to be able to configure <span class="xref std std-term">trusts</span>, <a class="reference internal" href="DNS.html"><span class="doc">DNS</span></a>
 needs to be configured properly, FreeIPA must have an own primary DNS
-domain matching its <a class="reference internal" href="Kerberos.html"><span class="doc">Kerberos</span></a> <a class="reference internal" href="../glossary.html#term-realm"><span class="xref std std-term">realm</span></a> name. DNS domain and
+domain matching its <a class="reference internal" href="Kerberos.html"><span class="doc">Kerberos</span></a> <span class="xref std std-term">realm</span> name. DNS domain and
 realm have to be different from Active Directory DNS domain.</p>
 <p>Another important requirement is IPv6 stack. Recommended way for
 contemporary networking applications is to only open IPv6 sockets for

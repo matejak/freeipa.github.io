@@ -305,34 +305,8 @@
 
 </ul>
 </details></li>
-<li class="toctree-l1"><a class="reference internal" href="../glossary.html">Glossary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Downloads.html">Downloads</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Contribute.html">Contribute</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../release-notes/index.html">Release notes</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-5.html">FreeIPA 4.13.5</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-4.html">FreeIPA 4.13.4</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-3.html">FreeIPA 4.13.3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-2.html">FreeIPA 4.13.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-1.html">FreeIPA 4.13.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-13-0.html">FreeIPA 4.13.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-5.html">FreeIPA 4.12.5</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-4.html">FreeIPA 4.12.4</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-3.html">FreeIPA 4.12.3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-2.html">FreeIPA 4.12.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-1.html">FreeIPA 4.12.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-12-0.html">FreeIPA 4.12.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-11-2.html">FreeIPA 4.11.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-11-1.html">FreeIPA 4.11.1</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-11-0.html">FreeIPA 4.11.0</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-11-0-beta.html">FreeIPA 4.11.0-beta</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-10-3.html">FreeIPA 4.10.3</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-10-2.html">FreeIPA 4.10.2</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-9-14.html">FreeIPA 4.9.14</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-9-13.html">FreeIPA 4.9.13</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-9-12.html">FreeIPA 4.9.12</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../release-notes/4-6-10.html">FreeIPA 4.6.10</a></li>
-</ul>
-</details></li>
 </ul>
 
     </div>
@@ -686,11 +660,6 @@ convert them to RST format:</p>
 <span class="o">&lt;</span><span class="n">release</span> <span class="n">notes</span> <span class="n">content</span><span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Replace any <code class="docutils literal notranslate"><span class="pre">raw::</span> <span class="pre">mediawiki</span></code> release-date template with ordinary text, for
-example <code class="docutils literal notranslate"><span class="pre">Release</span> <span class="pre">date:</span> <span class="pre">2026-01-15</span></code>. Prefix explicit RST labels with the release
-version (for example <code class="docutils literal notranslate"><span class="pre">release-4-13-1-resolved-tickets</span></code>) to keep labels unique
-across the site. Add the announcement to <code class="docutils literal notranslate"><span class="pre">src/release-notes/index.rst</span></code> and run
-<code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">check</span></code> in the website repository before submitting it.</p>
 <p>You can use pandoc to convert the generated release notes to asciidoc format.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pandoc</span> <span class="o">-</span><span class="n">f</span> <span class="n">mediawiki</span> <span class="o">-</span><span class="n">t</span> <span class="n">asciidoc</span> <span class="n">release</span><span class="o">-</span><span class="n">notes</span><span class="o">.</span><span class="n">mediawiki</span> <span class="o">-</span><span class="n">o</span> <span class="n">release</span><span class="o">-</span><span class="n">notes</span><span class="o">.</span><span class="n">txt</span>
 </pre></div>

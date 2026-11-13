@@ -6,9 +6,6 @@ LDAP attribute to IPA. You can find the change as commit
 `5af2e17 <https://git.fedorahosted.org/cgit/freeipa.git/commit/?id=5af2e1779ae1a0eca785493c8ed2eb044c8e282a>`__
 in the IPA source tree.
 
-The corresponding local design is
-:doc:`/page/V3/Integration_with_provisioning_systems`.
-
 ::
 
        From: Martin Kosek <mkosek@redhat.com>

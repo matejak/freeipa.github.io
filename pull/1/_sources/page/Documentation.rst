@@ -8,11 +8,6 @@ Documentation
 User Documentation
 ------------------
 
-Start with the installation and deployment guides, or browse practical
-how-tos for administration and integration with other systems. For debugging
-and reporting problems, see :doc:`/page/Troubleshooting`. For definitions of
-FreeIPA and Kerberos terminology, see the :doc:`glossary </glossary>`.
-
 .. toctree::
    :maxdepth: 1
    :titlesonly:

@@ -91,12 +91,6 @@ FreeIPA X.Y.Z
 <release notes content>
 ```
 
-Replace any `raw:: mediawiki` release-date template with ordinary text, for
-example `Release date: 2026-01-15`. Prefix explicit RST labels with the release
-version (for example `release-4-13-1-resolved-tickets`) to keep labels unique
-across the site. Add the announcement to `src/release-notes/index.rst` and run
-`make check` in the website repository before submitting it.
-
 You can use pandoc to convert the generated release notes to asciidoc format.
 
 ```

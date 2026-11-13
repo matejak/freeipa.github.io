@@ -149,11 +149,7 @@ FreeIPA!
       The command can take command arguments or can be run in the
       interactive mode. You can get more details with
       :command:`man ipa-server-install`. To start the interactive installation,
-      run:
-
-      .. code-block:: console
-
-         # ipa-server-install
+      run :command:`ipa-server-install` as a superuser.
 
       The command will at first gather all required information and then
       configure all required services.
